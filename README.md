@@ -18,5 +18,4 @@ Demostración:
 - Visita `yourmoodle/local/activity_insights/index.php` (requiere permisos adecuados).
 
 Notas:
-- Este plugin está preparado para demostrar conocimientos avanzados de Moodle en entrevistas.
 - Personaliza los mensajes y ajusta los pesos en settings.php antes de usar en producción.
