@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/activity_insights/db" VERSION="20251126" COMMENT="Install tables for activity_insights">
+  <TABLES>
+    <TABLE NAME="local_activity_insights_scores" COMMENT="Daily computed scores">
+      <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" />
+      <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" />
+      <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="false" />
+      <FIELD NAME="score" TYPE="number" LENGTH="10,4" NOTNULL="true" DEFAULT="0" />
+      <FIELD NAME="risklevel" TYPE="int" LENGTH="3" NOTNULL="true" DEFAULT="1" />
+      <FIELD NAME="factors" TYPE="text" NOTNULL="false" />
+      <FIELD NAME="timecomputed" TYPE="int" LENGTH="10" NOTNULL="true" />
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" />
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XML>
